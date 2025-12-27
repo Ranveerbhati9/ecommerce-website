@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DY Patil University Template</title>
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #002147;
+      color: white;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: url('https://dypatiluniversitypune.edu.in/public/front_assets/images/banners/home.jpg') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .about, .courses, .contact {
+      background: white;
+      margin: 20px 0;
+      border-radius: 8px;
+      padding: 40px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .about h2, .courses h2, .contact h2 {
+      color: #002147;
+      margin-bottom: 20px;
+    }
+
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .course-card {
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #f4f4f4;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form input, form textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      background: #002147;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #00172d;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @media(max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div><strong>DY Patil University</strong></div>
+        <div>
+          <a href="#about">About</a>
+          <a href="#courses">Courses</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Empowering Students for a Better Tomorrow</h1>
+  </section>
+
+  <section class="about container" id="about">
+    <h2>About Us</h2>
+    <p>DY Patil University Pune is committed to academic excellence and creating future-ready professionals. With state-of-the-art facilities and a student-centered approach, we nurture talent, creativity, and innovation across disciplines.</p>
+  </section>
+
+  <section class="courses container" id="courses">
+    <h2>Our Programs</h2>
+    <div class="courses-grid">
+      <div class="course-card">
+        <h3>Engineering</h3>
+        <p>Mechanical, Computer, Civil, and more with real-world lab experiences.</p>
+      </div>
+      <div class="course-card">
+        <h3>Management</h3>
+        <p>Innovative MBA programs focused on industry needs and leadership.</p>
+      </div>
+      <div class="course-card">
+        <h3>Pharmacy</h3>
+        <p>Top-notch pharmaceutical education with cutting-edge research facilities.</p>
+      </div>
+      <div class="course-card">
+        <h3>Architecture</h3>
+        <p>Design-centric curriculum preparing architects for tomorrow.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact container" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DY Patil University (Template). All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Simple form handling
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you for contacting us!");
+    });
+  </script>
+</body>
+</html>
